@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class IndexController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
 	/**
@@ -23,7 +23,7 @@ public class IndexController {
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("index screen display");
-		
+
 		return "index";
 	}
 }
